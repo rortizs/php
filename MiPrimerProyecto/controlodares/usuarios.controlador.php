@@ -17,8 +17,7 @@ class ControladorUsuarios{
 
         if(isset($_POST["ingUsuario"])){
             if(preg_match('/^[a-zA-Z0-9]+$/', $_POST["ingUsuario"])){
-
-
+                
                 $tabla = "usuarios";
                 $item = "usuario";
                 $valor = $_POST["ingUsuario"];
